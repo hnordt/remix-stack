@@ -1,11 +1,12 @@
-node_modules
+# macOS
+.DS_Store
 
-.cache
-.env
-.vercel
-.output
+# npm
+/node_modules
+/npm-debug.log*
 
-/build/
-/public/build
+# Remix
+/.cache
 /api/index.js
 /api/index.js.map
+/public/build
