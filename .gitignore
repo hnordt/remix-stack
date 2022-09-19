@@ -7,6 +7,8 @@
 
 # Remix
 /.cache
+/api/_assets
 /api/index.js
 /api/index.js.map
+/app/styles/index.dist.css
 /public/build

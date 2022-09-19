@@ -1,8 +1,13 @@
 {
   "scripts": {
     "format": "prettier \"**/*\" --ignore-path .gitignore --ignore-unknown --write",
-    "dev": "remix dev",
-    "build": "remix build"
+    "generate:css": "npx tailwindcss -i app/styles/index.css -o app/styles/index.dist.css",
+    "dev": "run-p \"dev:*\"",
+    "dev:css": "npm run generate:css -- --watch",
+    "dev:remix": "remix dev",
+    "build": "run-s \"build:*\"",
+    "build:css": "npm run generate:css -- --minify",
+    "build:remix": "remix build"
   },
   "engines": {
     "node": ">=16"
@@ -24,9 +29,11 @@
     "@types/react-dom": "^18.0.6",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1",
     "prettier-plugin-prisma": "^4.2.0",
     "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.1.8",
     "typescript": "^4.7.4"
   },
   "sideEffects": false,
