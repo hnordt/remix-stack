@@ -4,9 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["app/*"]
-    },
-    "allowJs": true,
-    "forceConsistentCasingInFileNames": true
+    }
   },
   "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"]
 }
