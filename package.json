@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "format": "prettier \"**/*\" --ignore-path .gitignore --ignore-unknown --write",
     "generate:css": "npx tailwindcss -i app/styles/index.css -o app/styles/index.dist.css",
     "dev": "run-p \"dev:*\"",
     "dev:css": "npm run generate:css -- --watch",

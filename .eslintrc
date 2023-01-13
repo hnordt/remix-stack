@@ -5,7 +5,6 @@
     "prettier"
   ],
   "rules": {
-    "require-await": "error",
     "arrow-body-style": ["error", "as-needed"]
   }
 }

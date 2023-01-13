@@ -2,13 +2,13 @@
 .DS_Store
 
 # npm
-/node_modules
+/node_modules/
 /npm-debug.log*
 
 # Remix
-/.cache
-/api/_assets
+/.cache/
+/api/_assets/
 /api/index.js
 /api/index.js.map
 /app/styles/index.dist.css
-/public/build
+/public/build/
